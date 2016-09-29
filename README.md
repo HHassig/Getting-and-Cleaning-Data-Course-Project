@@ -9,7 +9,7 @@ questions related to the project. You will be required to submit: 1) a tidy
 data set as described below, 2) a link to a Github repository with your script
 for performing the analysis, and 3) a code book that describes the variables,
 the data, and any transformations or work that you performed to clean up the
-data called 'CodeBook.md'. You should also include a `README.md` in the repo
+data called `CodeBook.md`. You should also include a `README.md` in the repo
 with your scripts. This repo explains how all of the scripts work and how they
 are connected.
 
@@ -26,7 +26,7 @@ Here are the data for the project:
 
 	https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-You should create one R script called 'run_analysis.R' that does the following. 
+You should create one R script called `run_analysis.R` that does the following. 
 
 1. Merges the training and the test sets to create one data set.
 2. Extracts only the measurements on the mean and standard deviation for each
@@ -62,20 +62,20 @@ directory.  The output should be the tidy data set you submitted for part 1
 
 _From Prompt:_ A code book that describes the variables, the data, and any
 transformations or work that you performed to clean up the data called
-'CodeBook.md'
+`CodeBook.md`
 
 #### README
 
-_From Prompt:_ You should also include a 'README.md' in the repo with your
+_From Prompt:_ You should also include a `README.md` in the repo with your
 scripts. This repo explains how all of the scripts work and how they are
 connected
 
-_From Prompt:_ You should include a 'README.md' in the repo describing how
+_From Prompt:_ You should include a `README.md` in the repo describing how
 the script works
 
 ### Data Analysis Explanation
 
-#### 1st tiny data set, 'tidyData1.txt':
+#### 1st tiny data set, `tidyData1.txt`:
 
 - Read and combine data sets
 - Read and combine subjects
@@ -88,13 +88,13 @@ the script works
 - Rename activities to be more understandable
 - Rename data labels with activity name
 - Merge data, subjects, and labels to single tiny data set
-- Write tiny data set to file, 'tidyData1.txt'
+- Write tiny data set to file, `tidyData1.txt`
 
-#### 2nd tiny data set, 'tidyDataMean.txt'
+#### 2nd tiny data set, `tidyDataMean.txt`
 
 - Prepare empty data set of appropriate length
 - Loop through subjects, followed by a subloop through activities
 - For each activity in a subject, get the full list of measurements
 - Obtain the mean of each of these activities
 - Put the means in subsequent columns of the subject/activity row
-- Write second tiny data set to file, 'tidyDataMean.txt'
+- Write second tiny data set to file, `tidyDataMean.txt`
