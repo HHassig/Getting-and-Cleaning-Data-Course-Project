@@ -72,7 +72,7 @@ names(Y) <- "activity"
 # Add understandable labels to the names
 names(S) <- "subject"
 tidyData <- cbind(S, Y, X)
-write.table(tidyData, "tidyData1.txt")
+write.table(tidyData, "tidyData1.txt", row.name=FALSE)
 
 # Create second "tidy" data set with avg of each var for each act and each sub
 uS = unique(S)[, 1]
@@ -93,4 +93,4 @@ for (a in 1:nS) {
 }
 
 # Create text file with means
-write.table(td, "tidyDataMean.txt")
+write.table(td, "tidyDataMean.txt", row.name=FALSE)
